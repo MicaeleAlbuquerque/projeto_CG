@@ -1,0 +1,87 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkviolet;
+    padding: 0 3rem;
+  }
+  
+  .header .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .header .nav a {
+    margin-left: 4rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-right: 2rem;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 60px; /* altura do header */
+    left: -250px;
+    width: 250px;
+    height: calc(100vh - 60px);
+    background-color: #2d3e50;
+    color: white;
+    overflow-y: auto;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .sidebar.active {
+    left: 0;
+  }
+  
+  .sidebar h3, .sidebar h4 {
+    margin: 1rem;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0 1rem;
+  }
+  
+  .sidebar li {
+    margin: 0.5rem 0;
+  }
+  
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 6px 10px;
+  }
+  
+  .sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  main {
+    margin: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: lightgrey;
+    border-radius: 5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }

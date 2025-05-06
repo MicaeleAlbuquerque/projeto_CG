@@ -1,0 +1,41 @@
+<header class="header">
+  <div class="logo">
+    <button class="menu-btn" (click)="toggleSidebar()">☰</button>
+    <a href="">LOGO</a>
+  </div>
+  <nav class="nav">
+    <a href="">Evento</a>
+    <a href="">Estabelecimento</a>
+    <a href="">Contato</a>
+  </nav>
+</header>
+
+<nav class="sidebar" [class.active]="isSidebarOpen">
+  <h3>Menu</h3>
+
+  <div class="nav-group">
+    <h4>Navegação</h4>
+    <ul>
+      <li><a href="#">Evento</a></li>
+      <li><a href="#">Estabelecimento</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-group">
+    <h4>Configurações</h4>
+    <ul>
+      <li><a href="#">Perfil</a></li>
+      <li><a href="#">Sair</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main (click)="closeSidebar()">
+  <div class="card">
+    <img src="https://plus.unsplash.com/premium_photo-1681883882438-84077fb862f4?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y3VpZGFyfGVufDB8fDB8fHww" alt="Cuidadora com idosa">
+    <div class="card-content">
+      <h2 class="titulo">Ajude a cuidar</h2>
+    </div>
+  </div>
+</main>
